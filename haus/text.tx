@@ -1,0 +1,21 @@
+Categories[With count]
+
+Porperties: 
+	- name
+	- location
+	- type [sale - rent]
+	- price
+	- area
+	- beds_number
+	- naths_number
+	- garages_number
+
+Agents:
+	- name
+	- title
+	- image
+
+Aboutus:
+	- text
+	- mission
+	- vision
