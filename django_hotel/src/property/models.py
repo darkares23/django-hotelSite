@@ -7,7 +7,7 @@ objects = models.Manager()
 
 class Property(models.Model):
     name = models.CharField(max_length=50)
-    # location
+    location = models.CharField(max_length=50, null=True)
     type = models.CharField(choices=property_types, max_length=20)
     price = models.IntegerField()
     category = models.ForeignKey(
@@ -28,6 +28,7 @@ class Property(models.Model):
 
 class Category(models.Model):
     category_name = models.CharField(max_length=30)
+    image = models.ImageField(upload_to='category/', null=True)
 
     def __str__(self):
         return self.category_name
